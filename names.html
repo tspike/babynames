@@ -1,0 +1,34 @@
+{% macro row(name, gender, data, graph) %}
+<tr>
+  <td>{{ name }}</td>
+  <td>{{ gender }}</td>
+  <td>{{data}}</td>
+  <td><img src='{{graph}}'></img></td>
+</tr>
+{% endmacro %}
+
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>Names</title>
+  
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>{% if data_header is defined %} {{data_header}} {% else %} Other info {% endif %}</th>
+        <th>Popularity</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for name, gender, data, graph in names %}
+      {{ row(name, gender, data, graph) }}
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>

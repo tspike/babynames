@@ -1,0 +1,9 @@
+*.swp
+*.swo
+*.db
+images/*
+python/*
+pickle/*
+names-output.html
+*.pyc
+*.csv
