@@ -37,5 +37,6 @@ if __name__ == '__main__':
     db.execute('CREATE INDEX namerank_idx ON names(name,rank);')
     db.execute('CREATE INDEX nameyear_idx ON names(name,year);')
     db.execute('CREATE INDEX namegender_idx ON names(name,gender);')
+    db.execute('CREATE INDEX rank_idx ON names(name,gender,rank);')
     conn.commit()
     conn.close()

@@ -28,3 +28,4 @@ $PYTHON "$DIR"/virtualenv.py "$OUTDIR"
 "$OUTDIR/bin/pip" install --upgrade numpy==1.9
 "$OUTDIR/bin/pip" install --upgrade matplotlib==1.4.2
 "$OUTDIR/bin/pip" install --upgrade jinja2==2.7
+"$OUTDIR/bin/pip" install --upgrade scipy==0.14.0

@@ -28,6 +28,7 @@ def rank_by_year(name, gender):
     data = []
     for i, (year, rank) in enumerate(db.execute(query)):
         data.append(-rank)
+        #print year, rank
     return data
 
 def draw_graph(data, name, gender):
