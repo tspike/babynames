@@ -57,11 +57,18 @@ def make_html(names, data_func):
         f.write(template.render(names=outnames, data_header=header))
 
 if __name__ == '__main__':
-    names = get_names()
-    #names = [('Mylee', 'F')]
+    names = get_names('M')
+    #names = [('Blaise', 'M')]
     #names = [
-            #('Autumn', 'F'),
-            #('August', 'F'),
+            #('Larkin', 'F'),
+            #('Estelle', 'F'),
+            #('Seraphina', 'F'),
+            #('Ophelia', 'F'),
+            #('Finley', 'F'),
+            #('Clementine', 'F'),
+            #('Aurelia', 'F'),
+            #('Neva', 'F'),
+            #('Annika', 'F'),
             #]
     #names = [
             #('tobin', 'M'),
